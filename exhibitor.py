@@ -44,7 +44,7 @@ class Exhibitor:
         self.window = pygame.display.set_mode(self.win_size)
 
         # 设置标题
-        pygame.display.set_caption("Patchouli Go")
+        pygame.display.set_caption("Smart Cirno")
 
         # 设定时间频率
         self.clock = pygame.time.Clock()
