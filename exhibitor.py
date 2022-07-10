@@ -114,7 +114,7 @@ class Exhibitor:
         self.pygame.display.flip()
 
         # 设置帧率
-        self.clock.tick(1)
+        self.clock.tick(60)
 
         player_cmd = None
         # 读取玩家操作

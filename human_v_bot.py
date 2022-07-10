@@ -33,7 +33,7 @@ from dlgo.goboard_slow import Move
 
 def main():
     # 人对机器 还是 机器对机器
-    mode = "h v b"
+    mode = "b v h"
 
     # 初始化 定义棋盘大小
     board_size = 3
@@ -43,12 +43,12 @@ def main():
     """
         测试用
     """
-    # game = game.apply_move(Move(Point(row=2, col=2)))
     # game = game.apply_move(Move(Point(row=1, col=1)))
     # game = game.apply_move(Move(Point(row=1, col=2)))
-    # game = game.apply_move(Move(Point(row=1, col=3)))
-    # game = game.apply_move(Move(Point(row=2, col=1)))
+    # game = game.apply_move(Move(Point(row=2, col=2)))
+    # game = game.apply_move(Move(Point(row=3, col=2)))
     # game = game.apply_move(Move(Point(row=2, col=3)))
+    # game = game.apply_move(Move(Point(row=2, col=1)))
     """
         测试用
     """
@@ -92,6 +92,7 @@ def main():
         print_move(game.next_player, move)
         # 将move交给game 应用变化
         game = game.apply_move(move)
+
     print(game.winner(), "win this game")
 
 
